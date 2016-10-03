@@ -4,7 +4,8 @@ var path = require('path');
 fs.readdir(process.argv[2], function callback(error, files) {
 	if (error) console.error(error);
 	files.forEach(function(file) {
-		if (path.extname(file) == ("." + process.argv[3])) {
+		var ext = "." + process.argv[3];
+		if (path.extname(file) == ext {
 			console.log(file);
 		}
 	});
