@@ -1,7 +1,5 @@
-var SumaTotal = 0
-
+var SumaTotal = 0;
 for (var i = 2; i < process.argv.length; i++) {
-	SumaTotal += Number(process.argv[i])
+	SumaTotal += Number(process.argv[i]);
 }
-
-console.log(SumaTotal)
+console.log(SumaTotal);
